@@ -1,0 +1,10 @@
+language: java
+jdk:
+- openjdk13
+after_success:
+- mvn clean test jacoco:report coveralls:report
+
+env:
+  global:
+    # Coveralls
+    secure: tsYGEPUxVdw9fNI6ZtiPN59jyOiGUoJnGQlVvSlJTAFIGkhzlCrivMbZFG4EZ3mlAlFKMs3ZSzalBzceMIgv/Ljyo9Vqma8qsBDsr8injt2iy2KK7If5tgfOMf6yl+XWjmBT88C9qVTCJkGHKQMlI5gcQqJGDa87yiL3sz/HT7tQ2cmKITJL54U8tic1evz3KpLNvcA8BECgi/e1nXSsKgwaSnlmvkxHY54TywfThiNjqeMCJU5kbZ2SZBNB7T5uGcTM8HwOVFNUDr/vHFTlVyuZ7DNh4ZS/sjenM4PW2C8tGK4UfvH+RIbBgNUeXsEL03ZucDjktZkF6Wal+eJuotHbc/lH5cSuGl79t1SpSj90BexJCojjZ95dr2oIVSPFF99h0aov9CLuPZscLyGuq34+mm9hAWJ4nKLvL6HVKTFlsOfN+yp51PJ/e8Gp8Tf3kz2BzmHFzasExyhu90eED3kQ04JUlAAgv3C379UpbwpJfg9nek0/H0rR9xdRTp2cBFTBBb/yrIvdhGB6klw7vfnLxDg7hcYMg4seAnH44SaLsekR/+J16gzUd/8WlxBKVVbwBng3yEDP8Ysk+PZZk3KrIGfwekIbuD0ZhFEPphfrkOAsnW+RB/v9CkUeqIGtOdSkc4d4TeH+pYGnwOK+EwP6Xeb6lhRdsX/vxiVUkgU=
